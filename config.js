@@ -1,11 +1,11 @@
 const config = {
     db: {
         // should not be exposed
-          
-        host: "db4free.net",
-        user: "root@localhost",
-        password: "root",
-        database: "TestDb",
+        host     : 'gator3004.hostgator.com',
+        user     : 'startger_tester',
+        password : 'MWb>&(U5FN%2',
+        database : 'startger_ideal',
+        port:"3000",
       },
       listPerPage: 10,
     };
