@@ -1,9 +1,9 @@
 var mysql      = require('mysql');
 var connection = mysql.createConnection({
-  host     : 'gator3004.hostgator.com',
-  user     : 'startger_tester',
-  password : 'MWb>&(U5FN%2',
-  database : 'startger_ideal'
+  host     : 'host',
+  user     : 'user',
+  password : 'password',
+  database : 'database'
 
 });
  
