@@ -1,15 +1,21 @@
 var mysql      = require('mysql');
+const env = require("dotenv");
+
+env.config()
+
 var connection = mysql.createConnection({
-  host     : 'host',
-  user     : 'user',
-  password : 'password',
-  database : 'database'
+  host     : process.env.host,
+  user     : process.env.user ,
+  password : process.env.password,
+  database : process.env.database
 
 });
+
+
  
 connection.connect();
  
-connection.query('SELECT temp, humidity, i_date, i_time FROM sensorsdata', function (error, results, fields) {
+connection.query('SELECT * FROM `sensorsdata` ORDER BY `sensorsdata`.`id` DESC LIMIT 20', function (error, results, fields) {
   if (error) throw error;
   console.log('The solution is: ', results);
 });
